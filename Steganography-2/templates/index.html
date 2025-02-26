@@ -1,0 +1,55 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Steganography</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body class="bg-dark text-white text-center">
+    <div class="container mt-5">
+        <h1>🔐 Image Steganography</h1>
+        <p>Hide and reveal messages inside images securely.</p>
+        <a href="{{ url_for('encrypt') }}" class="btn btn-primary btn-lg m-3">Encrypt Message</a>
+        <a href="{{ url_for('decrypt') }}" class="btn btn-danger btn-lg m-3">Decrypt Message</a>
+    </div>
+</body>
+</html>  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Steganography</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: #ecf0f1;
+            text-align: center;
+        }
+        h1 {
+            text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.3);
+        }
+        .btn-custom {
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            transition: 0.3s;
+        }
+        .btn-custom:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>🔐 Image Steganography</h1>
+        <p class="lead">Hide and reveal messages inside images securely.</p>
+        <a href="{{ url_for('encrypt') }}" class="btn btn-success btn-custom m-3">Encrypt Message</a>
+        <a href="{{ url_for('decrypt') }}" class="btn btn-warning btn-custom m-3">Decrypt Message</a>
+    </div>
+</body>
+</html>
